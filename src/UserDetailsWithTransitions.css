@@ -1,0 +1,42 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.user-details img {
+    flex-grow: 0;
+    max-width: 200px;
+    /* border-radius: 50%; */
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.user-details img.active {
+    transform: rotateZ(180deg);
+}
+
+.user-details button {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.user-details h1 {
+    transition: opacity 0.5s, font-size 3s;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.user-details .not-visible {
+    opacity: 0;
+    font-size: 10px;
+}
+
+.user-details .visible {
+    opacity: 1;
+    font-size: 20px;
+}
