@@ -1,0 +1,22 @@
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details img {
+    flex-grow: 0;
+    max-width: 200px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.user-details img:hover {
+    opacity: 0.6;
+}
+
+.user-details button {
+    font-size: 40px;
+}
